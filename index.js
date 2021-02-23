@@ -23,4 +23,5 @@ function requestPromise() {
     res = await requestPromise();
     fs.writeFileSync("response/output.html", res);
     console.log('write end');
+    console.log('write yeaaaaaaaaah');
 })();
