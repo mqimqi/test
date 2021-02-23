@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mqimqi/test#readme",
   "dependencies": {
+    "dayjs": "^1.10.4",
     "request": "^2.88.2"
   }
 }

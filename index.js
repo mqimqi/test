@@ -1,6 +1,6 @@
 const request = require("request");
-var fs = require("fs");
-
+const fs = require("fs");
+const dayjs = require("dayjs");
 
 function requestPromise() {
     const param = {
@@ -12,7 +12,7 @@ function requestPromise() {
             if (error) {
                 reject("ページを取得できませんでした");
             } else {
-                console.log(body);
+                //console.log(body);
                 resolve(body);
             }
         })
@@ -21,7 +21,8 @@ function requestPromise() {
 
 (async function() {
     res = await requestPromise();
-    fs.writeFileSync("response/output.html", res);
+    const nowTime = dayjs().format('YYYY-MM-DD HH:mm:ss.SSS');
+    fs.writeFileSync("response/output.html", nowTime);
     console.log('write end');
     console.log('write yeaaaaaaaaah');
 })();
