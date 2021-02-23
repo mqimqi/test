@@ -28,5 +28,4 @@ function requestPromise() {
     console.log('[XXXXX] message aaaaaaaaaaaaaaaaaaaa');
     console.log('[XXXXX] message bbbbbbbbbbbbbbbbbbbbbb');
     console.log('[XXXXX] ' + process.env.TARGET_DATE);
-    process.exit(1);
 })();
