@@ -1,0 +1,25 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "descriptiondayo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mqimqi/test.git"
+  },
+  "keywords": [
+    "word"
+  ],
+  "author": "mai",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mqimqi/test/issues"
+  },
+  "homepage": "https://github.com/mqimqi/test#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
