@@ -24,5 +24,6 @@ function requestPromise() {
     const nowTime = dayjs().format('HHmmssSSS');
     fs.writeFileSync("../result/output.html", nowTime);
     fs.writeFileSync("../result/" + nowTime + ".txt", nowTime);
-    console.log('write end');
+    console.log('[XXXXX] message aaaaaaaaaaaaaaaaaaaa');
+    console.log('[XXXXX] message bbbbbbbbbbbbbbbbbbbbbb');
 })();
