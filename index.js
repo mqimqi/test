@@ -1,6 +1,7 @@
 const request = require("request");
 const fs = require("fs");
 const dayjs = require("dayjs");
+const { exit } = require("process");
 
 function requestPromise() {
     const param = {
@@ -22,8 +23,10 @@ function requestPromise() {
 (async function() {
     res = await requestPromise();
     const nowTime = dayjs().format('HHmmssSSS');
-    fs.writeFileSync("../result/output.html", nowTime);
+    fs.writeFileSync("../result/output.txt", nowTime);
     fs.writeFileSync("../result/" + nowTime + ".txt", nowTime);
     console.log('[XXXXX] message aaaaaaaaaaaaaaaaaaaa');
     console.log('[XXXXX] message bbbbbbbbbbbbbbbbbbbbbb');
+    console.log('[XXXXX] ' + process.env.TARGET_DATE);
+    process.exit(1);
 })();
