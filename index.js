@@ -22,7 +22,7 @@ function requestPromise() {
 (async function() {
     res = await requestPromise();
     const nowTime = dayjs().format('HHmmssSSS');
-    fs.writeFileSync("response/output.html", nowTime);
-    fs.writeFileSync("response/" + nowTime + ".txt", nowTime);
+    fs.writeFileSync("../result/output.html", nowTime);
+    fs.writeFileSync("../result/" + nowTime + ".txt", nowTime);
     console.log('write end');
 })();
